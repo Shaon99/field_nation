@@ -1,0 +1,4 @@
+SELECT
+all_user.*,result.correct,result.time_taken
+FROM user all_user LEFT JOIN
+test_result result ON all_user.user_id = result.user_id
